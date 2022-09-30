@@ -156,12 +156,6 @@
                         "project-id": 8859,
                         "url-template": "https://github.com/gobby/gobby/releases/download/v$version/gobby-$version.tar.gz"
                     }
-                },
-                {
-                    "type": "patch",
-                    "paths": [
-                        "Add-desktop-id-to-Appstream-metadata.patch"
-                    ]
                 }
             ]
         }
