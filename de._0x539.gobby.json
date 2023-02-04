@@ -148,14 +148,22 @@
             "name": "gobby",
             "sources": [
                 {
-                    "type": "archive",
-                    "url": "https://github.com/gobby/gobby/releases/download/v0.6.0/gobby-0.6.0.tar.gz",
-                    "sha256": "fdb3f3f1984fa22b4f5116804281e2ea17bcaeebebdc14e66f5cf80e995d5cdc",
+                    "type": "git",
+                    "url": "https://github.com/gobby/gobby.git",
+                    "//1": "This is not a tag, but 12 commits past the last release, v0.6.0.",
+                    "//2": "All bar 2 commits commits since that tag are appdata fixes.",
+                    "commit": "21160017e1f7ffe1123d80acadac88a22bd7f838",
                     "x-checker-data": {
-                        "type": "anitya",
-                        "project-id": 8859,
-                        "url-template": "https://github.com/gobby/gobby/releases/download/v$version/gobby-$version.tar.gz"
+                        "type": "git",
+                        "tag-pattern": "^v([\\d.]+)$",
+                        "versions": {">": "0.6.0"}
                     }
+                },
+                {
+                    "type": "patch",
+                    "paths": [
+                        "Revert-Post-release-bump-to-0.7.0.patch"
+                    ]
                 }
             ]
         }

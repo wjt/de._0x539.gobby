@@ -1,0 +1,26 @@
+From 33c9d6ba6f715eba0fafe91108af65c4377414bf Mon Sep 17 00:00:00 2001
+From: Will Thompson <wjt@endlessos.org>
+Date: Sat, 4 Feb 2023 10:31:37 +0100
+Subject: [PATCH] Revert "Post-release bump to 0.7.0"
+
+This reverts commit 8b1d87498fdde9e4451219a1083d610970f6f220.
+---
+ configure.ac | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/configure.ac b/configure.ac
+index 9c70975..3decf2d 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -2,7 +2,7 @@
+ # Process this file with autoconf to produce a configure script.
+ 
+ AC_PREREQ(2.59)
+-AC_INIT([gobby], [0.7.0], [crew@0x539.de])
++AC_INIT([gobby], [0.6.0], [crew@0x539.de])
+ AC_CONFIG_AUX_DIR([.])
+ AM_INIT_AUTOMAKE(1.9 check-news foreign subdir-objects)
+ m4_ifdef([AM_SILENT_RULES],[AM_SILENT_RULES])
+-- 
+2.30.2
+
